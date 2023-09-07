@@ -1,7 +1,6 @@
 #!/bin/bash
-int main(void)
-{
-    char *message = "Programming is like building a multilingual puzzle";
-    puts(message);
-    return (0);
+#include <stdio.h>
+int main() {
+    puts("Programming is like building a multilingual puzzle,");
+    return 0;
 }
