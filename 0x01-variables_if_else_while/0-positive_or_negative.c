@@ -2,11 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-
 /**
  * main - Entry point of the program
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -28,6 +27,5 @@ int main(void)
 	{
         	printf(" is negative\n,n");
 	}
-
 	return (0);
 }
