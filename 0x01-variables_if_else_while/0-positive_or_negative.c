@@ -25,8 +25,9 @@ int main(void)
 		printf(" is zero\n,n");
 	}
 	else
+	{
         	printf(" is negative\n,n");
 	}
 
 	return (0);
-
+}
