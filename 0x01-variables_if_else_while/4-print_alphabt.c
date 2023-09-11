@@ -3,6 +3,9 @@
 /**
  * main - Entry point
  *
+ * Description: This program prints the alphabet in lowercase, excluding 'q' and 'e',
+ *              followed by a new line.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -11,8 +14,12 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(letter);
+		if (letter != 'e' && letter != 'q')
+		{
+			putchar(letter);
+		}
 	}
+
 	putchar('\n');
 
 	return (0);
