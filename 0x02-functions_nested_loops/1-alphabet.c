@@ -1,34 +1,17 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - Writes a character to stdout.
- * @c: The character to be written.
+ * print_alphabet - prints lower case alphabets.
  *
- * Return: On success, 1. On error, -1.
- */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
-
-/**
- * print_alphabet - Prints the lowercase alphabet followed by a new line.
- */
+ * Return: Always 0 (Success)
+*/
 void print_alphabet(void)
 {
-    char letter = 'a';
+	char c;
 
-    while (letter <= 'z')
-    {
-        _putchar(letter);
-        letter++;
-    }
-    
-    _putchar('\n');
-}
-
-int main(void)
-{
-    print_alphabet();
-    return (0);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
