@@ -1,20 +1,34 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
+ * _putchar - Writes a character to stdout.
+ * @c: The character to be written.
+ *
+ * Return: On success, 1. On error, -1.
  */
-void print_alphabet_x10(void)
+int _putchar(char c)
 {
-	int i;
-	char c;
+    return write(1, &c, 1);
+}
 
-	for (i = 0; i < 10; i++)
-	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
-		_putchar('\n');
-	}
+/**
+ * print_alphabet - Prints the lowercase alphabet followed by a new line.
+ */
+void print_alphabet(void)
+{
+    char letter = 'a';
+
+    while (letter <= 'z')
+    {
+        _putchar(letter);
+        letter++;
+    }
+    
+    _putchar('\n');
+}
+
+int main(void)
+{
+    print_alphabet();
+    return (0);
 }
