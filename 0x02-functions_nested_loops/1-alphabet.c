@@ -1,23 +1,29 @@
 #include <unistd.h>
 
-void _putchar(char c)
-{
-    write(1, &c, 1);
-}
-
 /**
- * print_alphabet - Prints the lowercase alphabet followed by a newline
- */
+ * main - Entry point of the program
+ *
+ * Description: function that prints the alphabet, in lowercase
+ *followed by a new line.
+ *
+ *Return: On success, 1. On error, -1.
+**/
 void print_alphabet(void)
 {
-    char letter = 'a';
+char letter = 'a';
 
-    while (letter <= 'z')
-    {
-        _putchar(letter);
-        letter++;
-    }
+while (letter <= 'z')
+{
+	_putchar(letter);
+	letter++;
+}
 
-    _putchar('\n');
+_putchar('\n');
+}
+
+int main(void)
+{
+print_alphabet();
+return (0);
 }
 
