@@ -1,29 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * main - Entry point of the program
- *
- * Description: function that prints the alphabet, in lowercase
- *followed by a new line.
- *
- *Return: On success, 1. On error, -1.
-**/
-void print_alphabet(void)
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
+ */
+void print_alphabet_x10(void)
 {
-char letter = 'a';
+	int i;
+	char c;
 
-while (letter <= 'z')
-{
-	_putchar(letter);
-	letter++;
+	for (i = 0; i < 10; i++)
+	{
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
+	}
 }
-
-_putchar('\n');
-}
-
-int main(void)
-{
-print_alphabet();
-return (0);
-}
-
